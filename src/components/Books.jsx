@@ -1,5 +1,5 @@
-import useFetch from "../hooks/useFetch";
 import { useState } from "react";
+import useFetch from "../hooks/useFetch";
 
 const Books = () => {
   const [deleteMessage, setDeleteMessage] = useState("");
@@ -28,6 +28,7 @@ const Books = () => {
       const data = await response.json()
       if(data){
         setDeleteMessage("Book Deleted Successfully.");
+        window.location.reload();
       }
 
     } catch(error){
