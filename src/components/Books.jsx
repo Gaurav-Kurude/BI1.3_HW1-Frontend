@@ -41,7 +41,7 @@ const Books = () => {
             <>
                <ul>
                 <h2>List Of Books</h2>
-                  {data.map((book) => (
+                  {data?.map((book) => (
                    <li key={book._id ?? book.title}>
                      <h3>{book.title}{" "}<button onClick={()=> handleDelete(book._id)}>Delete</button></h3>
                      <p>Author: {book.author}</p>
