@@ -8,11 +8,11 @@ const Books = () => {
     // console.log(data)
 
   if (loading) {
-    return <p>Loading movies...</p>;
+    return <p>Loading books...</p>;
   }
 
   if (error) {
-    return <p>Error loading movies: {error}</p>;
+    return <p>Error loading books: {error}</p>;
   }
 
   const handleDelete = async (bookId) =>{
